@@ -47,7 +47,7 @@ export default {
   data() {
     return ({
       editUser: false,
-      activeEditUser: {}
+      activeEditUser: {} 
     })
   },
   computed: mapState(['users', 'loading']),
