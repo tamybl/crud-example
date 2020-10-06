@@ -59,31 +59,19 @@
 Desarrollar una app que permita realizar todas las operaciones propias de un CRUD al endpoint antes mencionado.<br/>
 Desarrollando al menos 3 componentes, y utilizando el "Grid system" de Vuetify, se desea ver cómo se utiliza el framework progresivo de componentes para Vue.js.<br/>
 
-La app debe tener su manifest.json (Debe ser Progresiva).<br/><br/>
+La app debe tener su manifest.json (Debe ser Progresivaa).<br/><br/>
 </v-card-text>
         </v-card>
             </v-flex>
       </v-layout>
 
-      
-      
-    
 
-    <v-layout class="text-center">
-        <v-flex>
-        <v-card color="blue" >
-           <router-link to="/Crudjs"><v-btn class="ma-3" >Crud-JS</v-btn></router-link>
-           <router-link to="/Crudjson"><v-btn class="ma-3" >Crud-JSon</v-btn></router-link>
-           <router-link to="/"><v-btn class="ma-3" >Home</v-btn></router-link>
-       </v-card>
-      </v-flex>
-    </v-layout>
   </v-container>
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Main',
 
     data: () => ({
       

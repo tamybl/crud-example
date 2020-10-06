@@ -1,14 +1,20 @@
+import axios  from 'axios';
+
+const API_URL = 'https://jsonplaceholder.typicode.com';
+
 export const actions = {
-    fetchData({ commit }) {
-        fetch('https://jsonplaceholder.typicode.com/users') // invocando a la Url de jso.placeholder
-            .then(response => response.json()) // obtengo el json de respuesta
-            .then(json => {
-                //console.log(JSON.stringify(json))--Toda la data 
-                commit('updateData', json.slice(1, 10)) //ejecuto mi funcion update data filtrando a solo 10 registros
-                console.log('updateData', json.slice(1, 10)) // Ver datos por consola
-                commit('loadingData', false) // cuando  se espera el Request aparece loading Data 
-
-            })
-
+    loadUsers({commit}) {
+        axios.get(API_URL+'/users').then((response) => {
+            console.log(response.data);
+            commit('updateUsers', response.data);
+            commit('loadingStatus', false)
+        })
+    },
+    removeUser({commit}, id) {
+        commit('removeUser', id);
+    },
+    saveUser({commit}, newObject) {
+        commit('saveUser', newObject);
     }
+    
 }

@@ -1,5 +1,5 @@
 {
-  "name": "vuetifyjsoncrud",
+  "name": "crud",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,10 +10,13 @@
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "^3.6.95",
     "axios": "^0.20.0",
+    "babel-loader": "^8.1.0",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
     "vue": "^2.6.11",
+    "vue-axios": "^2.1.5",
+    "vue-loader": "^15.9.3",
     "vue-router": "^3.2.0",
     "vuetify": "^2.2.11",
     "vuex": "^3.4.0"

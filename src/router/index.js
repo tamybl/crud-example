@@ -6,49 +6,22 @@ Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
-        name: 'Home',
+        name: 'Main',
         component: () =>
-            import ( /* webpackChunkName: "home" */ '../views/Home.vue')
+            import ( /* webpackChunkName: "home" */ '../components/Main.vue')
     },
     {
-        path: '/about',
-        name: 'About',
+        path: '/list',
+        name: 'list',
         component: () =>
-            import ( /* webpackChunkName: "about" */ '../views/About.vue')
-    },
-
-    {
-        path: '/tablausuario',
-        name: 'tablausuario',
-        component: () =>
-            import ( /* webpackChunkName: "tablausuario" */ '../views/Tablausuario.vue')
-    },
-    {
-        path: '/json',
-        name: 'json',
-        component: () =>
-            import ( /* webpackChunkName: "json" */ '../views/Json.vue')
-    },
+            import ( /* webpackChunkName: "List" */ '../views/List.vue')
+    },    
     {
         path: '/vistavuetify',
         name: 'vistavuetify',
         component: () =>
             import ( /* webpackChunkName: "Vistavuetify" */ '../views/Vistavuetify.vue')
-    },
-    {
-        path: '/crudjs',
-        name: 'crudjs',
-        component: () =>
-            import ( /* webpackChunkName: "Vistavuetify" */ '../views/Crudjs.vue')
-    },
-
-    {
-        path: '/crudjson',
-        name: 'crudjson',
-        component: () =>
-            import ( /* webpackChunkName: "Vistavuetify" */ '../views/Crudjson.vue')
-    },
-
+    }
 ]
 
 const router = new VueRouter({
